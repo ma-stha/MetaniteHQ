@@ -14,8 +14,8 @@ Next.js 16 (App Router), TypeScript, Tailwind CSS v4, Supabase (Postgres, Auth, 
 Requires Node 22 and npm.
 
 ```bash
-git clone https://github.com/ma-stha/MetaniteHQ.git
-cd MetaniteHQ
+git clone https://github.com/ma-stha/metanite-hq.git
+cd metanite-hq
 npm install
 cp .env.example .env.local
 npm run dev

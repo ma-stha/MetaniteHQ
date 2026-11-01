@@ -26,7 +26,7 @@ export default async function SystemPage() {
         <CardBody className="space-y-2 text-sm text-text">
           <p>Environment variables: Vercel, Project Settings, Environment Variables.</p>
           <p>Database, auth and files: Supabase project metanite-hq (Sydney).</p>
-          <p>Code and deployments: GitHub ma-stha/MetaniteHQ, deployed by Vercel on every push to main.</p>
+          <p>Code and deployments: GitHub ma-stha/metanite-hq, deployed by Vercel on every push to main.</p>
         </CardBody>
       </Card>
     </div>
