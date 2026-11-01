@@ -1,6 +1,8 @@
-# MetaKnight HQ
+# Metanite HQ
 
-Central hub for the MetaKnight project: documentation, decisions, plans, and shared assets.
+Internal operating system for Metanite Marketing: leads, clients, engagements, the seven-dimension audit, and Strategic Marketing Playbook generation.
+
+Start with [docs/PLAN.md](docs/PLAN.md) (architecture and roadmap, awaiting approval) and [docs/BRAND.md](docs/BRAND.md).
 
 ## Layout
 
