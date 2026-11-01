@@ -48,6 +48,13 @@ CI runs all four checks on every push and pull request.
 | `docs/` | Plan, brand, business context, decision records. |
 | `brand/` | Logo and icon source files. |
 
+## Users and access
+
+- Sign-up is invitation only. The first account ever created becomes **owner** automatically; later accounts start as **consultant**.
+- Owners invite people from Settings, Users (needs `SUPABASE_SERVICE_ROLE_KEY` in Vercel) or from the Supabase dashboard (Authentication, Users, Invite user).
+- Invite and password-reset emails link back to `/auth/callback`. In Supabase, Authentication, URL Configuration, set Site URL to the production URL and add `https://<site>/auth/callback` and `http://localhost:3000/auth/callback` to Redirect URLs.
+- Turn off public sign-ups in Supabase: Authentication, Sign In / Providers, Email, disable "Allow new users to sign up".
+
 ## Deploying
 
 Push to `main`. Vercel builds and deploys automatically. Environment variables live in Vercel (Project, Settings, Environment Variables): `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY`.
@@ -65,8 +72,8 @@ Push to `main`. Vercel builds and deploys automatically. Environment variables l
 | Stage | Status |
 | --- | --- |
 | 0 Foundations: app, tokens, UI kit, Supabase wiring, CI | Done |
-| 1 Auth, roles, invite flow, app shell, dashboard skeleton | Next |
-| 2 Clients, contacts, engagements, stepper, activity log | |
+| 1 Auth, roles, invite flow, app shell, dashboard skeleton | Done |
+| 2 Clients, contacts, engagements, stepper, activity log | Next |
 | 3 Discovery questionnaire, evidence | |
 | 4 Rubrics, audit, scoring, scorecard | |
 | 5 Opportunities, recommendation library, roadmap | |
