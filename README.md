@@ -6,7 +6,8 @@ Central hub for the MetaKnight project: documentation, decisions, plans, and sha
 
 | Path | Purpose |
 | --- | --- |
-| `docs/` | Project documentation and guides |
+| `docs/` | Plan, brand tokens, business context, decision records |
+| `brand/` | Logo and icon |
 | `docs/decisions/` | Architecture and product decision records |
 | `.github/` | Issue and pull request templates |
 
