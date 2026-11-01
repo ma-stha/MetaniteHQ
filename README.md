@@ -13,8 +13,8 @@ Central hub for the MetaKnight project: documentation, decisions, plans, and sha
 ## Getting started
 
 ```bash
-git clone git@github.com:ma-stha/MetaKnight-HQ.git
-cd MetaKnight-HQ
+git clone git@github.com:ma-stha/MetaniteHQ.git
+cd MetaniteHQ
 ```
 
 ## Contributing
