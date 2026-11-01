@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+/* Brand tokens. Source of truth: docs/BRAND.md */
+:root {
+  --green: #13e52c;
+  --green-dim: rgba(19, 229, 44, 0.12);
+  --bg: #0f0f22;
+  --bg-2: #15152c;
+  --bg-3: #1d1d38;
+  --line: #2a2a48;
+  --white: #f6f5f1;
+  --text: #d9d8d3;
+  --muted: #8f8fa6;
+  --amber: #f5b73b;
+  --red: #ff5c5c;
+  --blue: #5aa9ff;
+}
+
+@theme inline {
+  --color-green: var(--green);
+  --color-green-dim: var(--green-dim);
+  --color-bg: var(--bg);
+  --color-bg-2: var(--bg-2);
+  --color-bg-3: var(--bg-3);
+  --color-line: var(--line);
+  --color-white: var(--white);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-amber: var(--amber);
+  --color-red: var(--red);
+  --color-blue: var(--blue);
+
+  --font-sans: var(--font-manrope), system-ui, sans-serif;
+  --font-display: var(--font-bricolage), var(--font-manrope), system-ui, sans-serif;
+
+  --radius-sm: 3px;
+  --radius-md: 3px;
+  --radius-lg: 3px;
+}
+
+html {
+  background: var(--bg);
+  color: var(--text);
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "ss01", "cv11";
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* Visible focus for keyboard users, in brand green */
+:focus-visible {
+  outline: 2px solid var(--green);
+  outline-offset: 2px;
+}
+
+::selection { background: var(--green); color: var(--bg); }
